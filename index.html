@@ -4,71 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
+    <title>Document</title>
+ <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
-    <title>weather</title>
-  </head>
-  <body class="picture">
+    <link href="index.css" rel= "stylesheet" type="text/css" />
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>  
+</head>
+  <body>
     <div class="container">
-      <div class="weather-app">
-        <form>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city.."
-                class="form-control search-input"
-                id="box"
-              />
-            </div>
-            <div class="col-3 p-0">
-              <input
-                type="submit"
-                class="btn btn-primary"
-                value="Search"
-                id="purple"
-              />
-            </div>
-          </div>
-        </form>
-        <div class="row">
-          <div class="col-6">
-            <h1 id="city">San Francisco</h1>
-            <ul>
-              <li class="list">Sunday 17:11, clear sky</li>
-              <li class="list">
-                Humidity: <strong class="pink">64%</strong>, Wind:
-                <strong class="pink">2.24km/h</strong>
-              </li>
-            </ul>
-          </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-8">
-            <div class="temperature-container d-flex justify-content-end">
-              <canvas width="52" height="52"></canvas>
-              <div>
-                <span class="temperature">☁️5</span><span class="unit">°C</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <form id="searchCity">
+        <input type="search..." name="weather" id="city" class="weather" placeholder="Search" />
+        <input type="submit" id="submit">
+        <button id="current"> Current </button>
+      </form>
 
-        <small>
-          <a
-            href="https://github.com/shecodes777/vanilla-weather-apps"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Mary Tadesse</small
-        >
+      <h2>
+        Madrid, Spain
+      </h2>
+        <h6>Wednesday 19:35</h6>
+        <h6 id="sky"> Clouds </h6>  
+      
+      <br />
+      <h1 class="display" id="temp">🌤 9°<small>c</small></h1>
+    
+      <h3>
+        <ul>
+          <li id="humidity">
+          Humidity: 46%
+          </li>
+          <li id="wind">
+          Wind : 5km/hr
+          </li>
+        </ul>
+      </h3>
+      <br />
+      <div class="row">
+        <div class="col-2 days">Thursday</div>
+        <div class="col-2 days">Friday</div>
+        <div class="col-2 days">Saturday</div>
+        <div class="col-2 days">Sunday</div>
+        <div class="col-2 days">Monday</div>
+        <div class="col-2 days">Tuesday</div>
       </div>
-    </div>
-    <script src="src/index.js"></script>
+      <div class="row">
+        <div class="col-2 weather-forecast">🌦</div>
+        <div class="col-2 weather-forecast">☁️</div>
+        <div class="col-2 weather-forecast">🌧</div>
+        <div class="col-2 weather-forecast">🌤</div>
+        <div class="col-2 weather-forecast">🌤</div>
+        <div class="col-2 weather-forecast">☀️</div>
+      </div>
+    <div class="row">
+      <div class="col-2 temperature">6℃</div>
+      <div class="col-2 temperature">7℃</div>
+      <div class="col-2 temperature">4℃</div>
+      <div class="col-2 temperature">8℃</div>
+      <div class="col-2 temperature">10℃</div>
+      <div class="col-2 temperature">13℃</div>
+    </div>  
+    <br>
+    <br>
+    <a href="https://github.com/shecodes777/mary-codes" target="_blank" class="source">Open-source code </a>
+    <script src="index.js"></script>
   </body>
 </html>
