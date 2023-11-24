@@ -20,7 +20,7 @@ h1 {
   font-size: 30px;
   font-weight: 700;
   line-height: 48px;
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
   margin-bottom: 0;
 }
 
@@ -63,22 +63,20 @@ li {
 
 #box {
   background-color: #f9f7fe;
+  border: none;
+  float: right;
+  width: 360px;
 }
 
-.row {
-  margin-top: var(--bs-gutter-y);
-  max-width: 100%;
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-}
 #purple {
   background: #885df1;
   border: none;
   border-radius: 90x;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
-  height: 50px;
-  padding: 15px 0;
+  height: 38px;
+  width: 140px;
+  float: left;
 }
 
 .col-6 {
@@ -88,7 +86,9 @@ li {
   left: 50px;
 }
 
-.col-9 {
-  flex: 0 0 auto;
-  width: 100%;
+div {
+  display: block;
+}
+
+.p-0 {
 }
